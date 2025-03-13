@@ -28,3 +28,12 @@ print(f"{n} divided by {d} is {quotient}")
 
 # Use the get_number function to ask the user for an index to access an element from a predefined list. 
 # Print out the value from the list, handling the index error if the user selects a non-existent index.
+list = ["Yes", "No", "Maybe", "Absolutely not", "Of course", "What do you think?"]
+print("\n8BALL")
+while True:
+    try:
+        num = get_number()
+        print(list[num])
+        break
+    except:
+        print(f"Enter a number between 0 and {len(list)-1}")
